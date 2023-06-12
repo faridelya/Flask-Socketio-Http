@@ -1,0 +1,17 @@
+python=3.8
+gunicorn
+flask
+flask_cors
+flask_session
+flask_socketio
+gevent-websocket
+
+
+
+
+# if you want to show log on terminal run the below command 
+#   gunicorn -k geventwebsocket.gunicorn.workers.GeventWebSocketWorker -w 1 --bind 0.0.0.0:8000  sessions:app
+
+
+# if you want to log in file then run this command
+#  gunicorn -k geventwebsocket.gunicorn.workers.GeventWebSocketWorker -w 1 --bind 0.0.0.0:8000 --error-logfile /path/to/gunicorn_log.log sessions:app
